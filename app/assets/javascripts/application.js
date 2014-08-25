@@ -14,6 +14,21 @@
 //= require jquery_ujs
 //= require_tree .
 
-$(document).ready(function() {
-  $('body').append("<h1>hello world, I'm from only javascript!</h1>");
+
+$(document).ready(function () {
+    $('form').on("submit", function (e) {
+        e.preventDefault();
+        var toDo = $("#todo").val();
+        $('ul').append('<li>' + toDo + '</li>');
+
+
+        if (toDo != "") {
+            $('#closingIdButton').show();
+            $('#message').show()
+            window.setTimeout(function () {
+                $('#closingIdButton').hide();
+                $('#message').hide();
+            }, 5000);
+        }
+    })
 });

@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+
+#closingIdButton {
+    float: right;
+    display: none;
+}
+
+#message {
+    display: none;
+}
