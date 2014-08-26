@@ -60,5 +60,8 @@ $(document).ready(function () {
         $('#todo-completed').append(row);
     });
 
-//    This is not working, the 'close' button is activating the 'submit value for the form.
+//   I need the checkmark to to disappear as it moves to the completed list.  I could just change it to another symbol.
+//   The next step is to figure that out, come up with an undo function, and move on the the json shit.
+    
+
 });
