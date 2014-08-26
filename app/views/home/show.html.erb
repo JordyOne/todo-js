@@ -1,20 +1,45 @@
-<h1>ToDoly</h1>
+<div>
+  <h1>ToDoly</h1>
+</div>
 
-<form name="toDoForm">
-  <div id="message">
-    ToDo created!
-    <button id="closingIdButton">
-      This is a Huge Button
-    </button>
+<div>
+  <div>
+    <form name="toDoForm">
+      <input type="text" id="todo" name="todo"/>
+      <input type="submit" id="submit">
+    </form>
   </div>
-  <input type="text" id="todo" name="todo"/>
-  <input type="submit">
-</form>
+</div>
 
 <hr>
 
 <div>
   <h1>ToDo!</h1>
-  <ul>
+</div>
+
+<div id="message">
+  ToDo created
+  <span id="close">
+    ✗
+  </span>
+</div>
+
+<div id="delete">
+  toDo deleted
+  <span id="delete-close">
+    ✗
+  </span>
+</div>
+
+<div>
+  <ul id="todo-list">
+  </ul>
+</div>
+
+<div>
+  <h1>Completed!</h1>
+</div>
+<div>
+  <ul id="todo-completed">
   </ul>
 </div>

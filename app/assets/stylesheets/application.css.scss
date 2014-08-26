@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+main {
+    width: 500px;
+    margin: auto;
+    font-family: Indie Flower;
+}
+
+input[type=text] {
+    width: 494px;
+}
+
+input[type=submit] {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#message {
+    width: 490px;
+    display: none;
+    background: greenyellow;
+    text-align: center;
+    overflow: hidden;
+    padding: 5px;
+
+}
+
+#close {
+    float: right;
+}
+
+/*pseudo selector*/
+
+#close:hover {
+    cursor: pointer;
+}
+
+#delete {
+    width: 490px;
+    display: none;
+    background: #ff0c09;
+    text-align: center;
+    overflow: hidden;
+    padding: 2px;
+}
+
+#delete-close {
+    float: right;
+    padding: 4px;
+}
+
+#delete-close:hover {
+    cursor: pointer;
+}
+
+#list-item {
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+.todo-completed {
+  float: right;
+  padding: 4px;
+  color: green;
+}
+
+.todo-delete {
+    float: right;
+    padding: 4px;
+    color: red;
+}
+
+.todo-delete:hover {
+    cursor: pointer;
+}
+
+
+#todo-list {
+    padding: 0;
+}
+
+#todo-completed {
+  padding: 0;
+}
+
+#todo-completed:hover {
+  cursor: pointer;
+}
